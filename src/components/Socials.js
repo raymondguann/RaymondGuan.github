@@ -18,7 +18,7 @@ const Socials = () => {
                 <a href='http://www.linkedin.com/in/raymondguan540'target="_blank">
                     <BsLinkedin />
                 </a>
-                <a href='https://github.com/Raymond540'target="_blank">
+                <a href='https://github.com/raymondguann'target="_blank">
                     <FaGithub />
                 </a>
                 <a href='https://mail.google.com/mail/?view=cm&source=mailto&to=rayguanwe@gmail.com' target="_blank">

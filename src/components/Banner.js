@@ -20,6 +20,8 @@ import { motion } from 'framer-motion';
 
 import { fadeIn } from '../variants';
 
+import resumePDF from '../assets/Resume1.pdf';
+
 const Banner = () => {
   return (
   <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
@@ -49,11 +51,9 @@ const Banner = () => {
             {/*mr-4: margin right*/}
             <TypeAnimation 
               sequence={[
-                'Front-End Developer',
+                'Software Engineer',
                 2000,
                 'Aspiring Guitarist',
-                2000,
-                'The Fucking Goat',
                 2000,
               ]}
               speed={50}
@@ -71,8 +71,10 @@ const Banner = () => {
             viewport={{once: false, amount:0.7}} 
             className='flex max-w-max gap-x-6 items-center mb-16 mx-auto lg:mx-0'>
             {/*mb: margin bottom pushed banner image down pads bottom of text*/}
-            <button className='btn btn-lg'>Contact Me</button>
-            <a href="#" className='text-gradient btn-link'>Resume</a>
+            <button className='btn btn-lg' onClick={() => window.open('mailto:rayguanwe@gmail.com', '_blank')}>
+              Contact Me
+            </button>
+            <a href={resumePDF} className='text-gradient btn-link' target="_blank" rel="noopener noreferrer">Resume</a>
           </motion.div>
         </div>
         {/*image*/}

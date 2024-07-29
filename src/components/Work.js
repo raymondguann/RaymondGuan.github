@@ -9,9 +9,9 @@ import { fadeIn } from '../variants';
 
 // import images from assets folder  
 
-import Img1 from '../assets/idea1.jpeg';
-import Img2 from '../assets/idea2.png';
-import Img3 from '../assets/idea5.jpeg';
+import Img1 from '../assets/Portfolio.png';
+import Img2 from '../assets/ExpenseL.png';
+import Img3 from '../assets/TimWeb.png';
 //import Img4 from '../assets/idea7.png';
 
 
@@ -36,7 +36,9 @@ const Work = () => {
                 Projects
               </h2>
               {/* h2 : gives the text header font (predetermined font in files?, text-accent also seems to be predetermined as wel;*/}
-              <button className='btn btn-sm'>View All Projects</button>
+              <button className='btn btn-sm' onClick={() => window.open('https://github.com/raymondguann?tab=repositories', '_blank', 'noopener,noreferrer')}>
+                Show All Projects
+                </button>
             </div>
             {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
@@ -54,7 +56,7 @@ const Work = () => {
               {/* hover effect but enchances image in background */}
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:top-14 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Web Development - React Js | Tailwind CSS</span>
+                <span className='text-gradient'>React Js | Tailwind CSS</span>
               </div>
               {/* edit this to add project description, changes position of text that appears in hover effect and text transition animation popup effect*/}
               {/* title */}
@@ -62,8 +64,9 @@ const Work = () => {
                 <span className='text-3xl text-white'>Personal Website</span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-900 z-50'>
-                <button className='btn btn-sm'>Github Repo</button>
-                <button className='btn btn-sm'>Live Site</button>
+                <button className='btn btn-sm' onClick={() => window.open('https://github.com/raymondguann/RaymondGuan.github', '_blank', 'noopener,noreferrer')}>
+                    Github Repo
+                </button>
               </div>
               {/* there was text on the bottom margin of the container, still within the container, hides the text, gives it the same animation as pretitle */}
             </div>
@@ -93,16 +96,17 @@ const Work = () => {
               {/* hover effect but enchances image in background */}
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:top-14 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Full Stack Development - React Js | Node Js</span>
+                <span className='text-gradient'>HTML | CSS | Javascript</span>
               </div>
               {/* edit this to add project description, changes position of text that appears in hover effect and text transition animation popup effect*/}
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:top-24 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'> API</span>
+                <span className='text-3xl text-white'> Expense Logger</span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-900 z-50'>
-                <button className='btn btn-sm'>Github Repo</button>
-                <button className='btn btn-sm'>Live Site</button>
+                <button className='btn btn-sm' onClick={() => window.open('https://github.com/raymondguann/Expense-Logger', '_blank', 'noopener,noreferrer')}>
+                    Github Repo
+                </button>
               </div>
               {/* there was text on the bottom margin of the container, still within the container, hides the text, gives it the same animation as pretitle */}
             </div>
@@ -121,16 +125,17 @@ const Work = () => {
               {/* hover effect but enchances image in background */}
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:top-14 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Software Development</span>
+                <span className='text-gradient'>HTML | CSS</span>
               </div>
               {/* edit this to add project description, changes position of text that appears in hover effect and text transition animation popup effect*/}
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:top-24 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Algorithm Visualizer</span>
+                <span className='text-3xl text-white'>TIM Website</span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-900 z-50'>
-                <button className='btn btn-sm'>Github Repo</button>
-                <button className='btn btn-sm'>Live Site</button>
+                <button className='btn btn-sm' onClick={() => window.open('https://github.com/raymondguann/TIM-Website-', '_blank', 'noopener,noreferrer')}>
+                    Github Repo
+                </button>
               </div>
               {/* there was text on the bottom margin of the container, still within the container, hides the text, gives it the same animation as pretitle */}
             </div>
